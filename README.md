@@ -10,6 +10,9 @@ At around 100 epochs, the results were nearly optimized, extracting somewhat use
 failing to recognize negative signs or failing to distinguish between zeros and eights.
 
 - The optimizer algorithm was changed: SGD -> Adam
-- The learning rate was therefore adjusted: 0.005 -> 0.001.
+- The learning rate was therefore adjusted: 0.005 -> 0.001
 - The momentum (betas) were defaulted, as well as the weight decays
-- Epoch increased the 1000.
+- A learning rate step scheduler was introduced
+- Epoch was increased to 200
+
+The updateModel script additionally trains the saved model using a new dataset.
