@@ -60,7 +60,7 @@ if __name__ == "__main__":
     scheduler = StepLR(optimizer, step_size=10, gamma=0.1)
 
     # Main training loop
-    num_epochs = 100
+    num_epochs = 50
     for epoch in range(num_epochs):
         train_loss = train_one_epoch(model, train_loader, optimizer, device)
         val_loss = validate_one_epoch(model, valid_loader, device)

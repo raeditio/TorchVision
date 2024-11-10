@@ -7,13 +7,13 @@ from train import predict_and_read_value, display_image_with_prediction, apply_n
 if __name__ == "__main__":    
     # load the model
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    model = load("models/faster_rcnn_model2.pth")
+    model = load("models/faster_rcnn_model.pth")
     model = model.to(device)
     
     test_data = YoloDataset("dataset/test", transform=Compose([ToTensor()]))
     
     # Example of using the inference function and displaying the result
-    sample_image, _ = test_data[1]
+    sample_image, _ = test_data[10]
     sample_image = sample_image.unsqueeze(0)  # Add batch dimension for model input
     predicted_value = predict_and_read_value(model, sample_image, device)
 

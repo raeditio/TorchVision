@@ -16,3 +16,4 @@ failing to recognize negative signs or failing to distinguish between zeros and 
 - Epoch was increased to 200
 
 The updateModel script additionally trains the saved model using a new dataset.
+The app script was added to render the app on a new image.
