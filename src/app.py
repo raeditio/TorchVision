@@ -13,7 +13,7 @@ if __name__ == "__main__":
     test_data = YoloDataset("dataset/test", transform=Compose([ToTensor()]))
     
     # Example of using the inference function and displaying the result
-    sample_image, _ = test_data[10]
+    sample_image, _ = test_data[3]
     sample_image = sample_image.unsqueeze(0)  # Add batch dimension for model input
     predicted_value = predict_and_read_value(model, sample_image, device)
 
