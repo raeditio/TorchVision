@@ -22,10 +22,10 @@ As many deep learning projects, the importance of an abundance of high quality d
 In the latest update, the model was able to produce predictions of meaningful accuracy, but it struggled to detect negative signs due to the lack of its
 representation in the dataset.
 
-![Fails to detect negative sign](https://github.com/raeditio/Torchvision/blob/main/89.1.png?raw=true)
+![Fails to detect negative sign](https://github.com/raeditio/Torchvision/blob/main/appTest/89.1.png?raw=true)
 
 The model also struggled in cases of repeating digits.
 
-![Fails to detect repeat](https://github.com/raeditio/Torchvision/blob/main/rep.png?raw=true)
+![Fails to detect repeat](https://github.com/raeditio/Torchvision/blob/main/appTest/rep.png?raw=true)
 
 In the future, the model is intended to be updated through a generated and auto-labeled dataset.
