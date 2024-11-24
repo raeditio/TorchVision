@@ -1,10 +1,10 @@
 # TorchVision
 This project aims to fine-tune the R-CNN model on PyTorch to detect 7-segment readings from a digital screen.
 
-This is a recreation of a previous project which I created for the same purpose using Tensorflow API.
+This is a recreation of a previous project that I created for the same purpose using Tensorflow API.
 
-All images in this training were sourced from Roboflow, and the power of their API's were elevated to do most preprocessing and augmentation. All iamges were also 
-resized to 640 x 640 for a faster training.
+All images in this training were sourced from Roboflow, and the power of their APIs was elevated to do most preprocessing and augmentation. All images were also 
+resized to 640 x 640 for faster training.
 
 At around 100 epochs, the results were nearly optimized, extracting somewhat useful readings from the data. Yet, the model continued to have issues, such as 
 failing to recognize negative signs or failing to distinguish between zeros and eights.
@@ -18,14 +18,30 @@ failing to recognize negative signs or failing to distinguish between zeros and 
 The updateModel script additionally trains the saved model using a new dataset.
 The app script was added to render the app on a new image.
 
-As many deep learning projects, the importance of an abundance of high quality data is crucial to the successful training of the model.
-In the latest update, the model was able to produce predictions of meaningful accuracy, but it struggled to detect negative signs due to the lack of its
+As with many deep learning projects, an abundance of high-quality data is crucial to the model's successful training.
+In the latest update, the model produced predictions of meaningful accuracy. Still, it struggled to detect negative signs due to the lack of 
 representation in the dataset.
 
-![Fails to detect negative sign](https://github.com/raeditio/Torchvision/blob/main/appTest/89.1.png?raw=true)
+<table>
+  <tr>
+    <td>
+      <h3 style="text-align: center;">Fails to detect negative sign</h3>
+      <img 
+        src="https://github.com/raeditio/Torchvision/blob/main/appTest/89.1.png?raw=true" 
+        alt="Negative sign" 
+        width="400"
+      />
+    </td>
+    <td>
+      <h3 style="text-align: center;">Struggles with repeating digits</h3>
+      <img
+        src="https://github.com/raeditio/Torchvision/blob/main/appTest/rep.png?raw=true"
+        alt="Repeat"
+        width="400"
+      />
+    </td>
+  </tr>
+</table>
 
-The model also struggled in cases of repeating digits.
-
-![Fails to detect repeat](https://github.com/raeditio/Torchvision/blob/main/appTest/rep.png?raw=true)
 
 In the future, the model is intended to be updated through a generated and auto-labeled dataset.
