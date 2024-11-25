@@ -22,6 +22,7 @@ As with many deep learning projects, abundant high-quality data is crucial to th
 In the latest update, the model produced predictions of meaningful accuracy. Still, it struggled to detect negative signs due to the lack of 
 representation in the dataset.
 
+<h3>Struggles to detect negative sign/repeated digits</h3>
 <img
   align=left
   src="https://github.com/raeditio/Torchvision/blob/main/appTest/89.1.png?raw=true" 
