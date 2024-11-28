@@ -1,5 +1,17 @@
 # TorchVision
-To clone the repository, run: `git clone https://github.com/raeditio/TorchVision.git`
+
+TorchVision is a repository for computer vision projects.
+
+## How to Clone the Repository
+
+Run the following commands in your terminal:
+```bash
+git clone https://github.com/raeditio/TorchVision.git
+cd TorchVision
+```
+
+To install dependencies, run
+`pip install -r requirements.txt`
 
 This project aims to fine-tune the R-CNN model on PyTorch to detect 7-segment readings from a digital screen.
 
