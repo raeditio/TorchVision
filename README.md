@@ -1,4 +1,6 @@
 # TorchVision
+To clone the repository, run: `git clone https://github.com/raeditio/TorchVision.git`
+
 This project aims to fine-tune the R-CNN model on PyTorch to detect 7-segment readings from a digital screen.
 
 This is a recreation of a previous project that I created for the same purpose using Tensorflow API.
