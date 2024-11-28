@@ -11,7 +11,9 @@ cd TorchVision
 ```
 
 To install dependencies, run
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 This project aims to fine-tune the R-CNN model on PyTorch to detect 7-segment readings from a digital screen.
 
