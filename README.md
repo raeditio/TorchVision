@@ -18,6 +18,8 @@ failing to recognize negative signs or failing to distinguish between zeros and 
 The updateModel script additionally trains the saved model using a new dataset.
 The app script was added to render the app on a new image.
 
+![21.84](https://github.com/raeditio/Torchvision/blob/main/appTest/21.84.png?raw=true)
+
 As with many deep learning projects, an abundance of high-quality data is crucial to the model's successful training.
 In the latest update, the model produced predictions of meaningful accuracy. Still, it struggled to detect negative signs due to the lack of 
 representation in the dataset.
